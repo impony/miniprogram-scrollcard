@@ -3,7 +3,7 @@
     overflow: hidden;
     position: relative;
     height: 100%;
-    background-color: #5D8FCA;
+    background-color: #e0e0e0;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,7 +26,6 @@
 /* ScrollCard 卡片阴影圆角那一层，负责控制样式 */
 .scrollcard-inner {
     overflow: hidden;
-    padding: 0 60rpx;
     height: 100%;
     color: #333;
     background-color: #fff;
@@ -36,6 +35,7 @@
 
 /* ScrollCard 卡片头部 */
 .scrollcard-ctrl {
+    padding: 0 60rpx;
     text-align: center;
 }
 
@@ -50,13 +50,14 @@
 
 /* ScrollCard 卡片头部内容区 */
 .scrollcard-head {
-    padding: 20rpx 0;
     text-align: left;
 }
 
 /* ScrollCard 主内容区 */
 .scrollcard-main {
     overflow: scroll;
+    box-sizing: border-box;
+    padding: 0 60rpx 180rpx;
     height: 100%;
 }
 
@@ -66,5 +67,10 @@
     font-size: 48rpx;
 }
 .scrollcard-item {
-    margin: 10rpx 0;
+    margin: 0 0 20rpx;
+    font-size: 28rpx;
+}
+.scrollcard-h3 {
+    padding-top: 20rpx;
+    font-size: 32rpx;
 }
