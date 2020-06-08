@@ -1,0 +1,27 @@
+<view class="scrollcard-view"
+      bindtap="previewImage"
+      style="background-image: url('https://www.huaruife.com/wp-content/themes/eight-sec/images/cta-bg.jpg')"
+      data-image-url="https://www.huaruife.com/wp-content/themes/eight-sec/images/cta-bg.jpg">
+    <scroll-view scroll-y="true"
+                 scroll-with-animation="true"
+                 scroll-into-view="{{ scrollCardToView }}"
+                 scroll-top="{{ scrollCardTop }}"
+                 bindscroll="scrollCardScroll"
+                 class="scrollcard">
+        <view class="scrollcard-inner">
+            <view id="js-scrollcard-ctrlbar"
+                  class="scrollcard-ctrl"
+                  catchtap="scrollCardGotoUpper"
+                  data-toview="js-scrollcard-ctrlbar">
+                <view class="scrollcard-ctrlbar"></view>
+                <view class="scrollcard-head">
+                    <view class="scrollcard-title">ScrollCard</view>
+                    <view class="scrollcard-item">快速创建一个滚动卡片</view>
+                </view>
+            </view>
+            <view class="scrollcard-main">
+                <view class="scrollcard-item">许多手机应用都使用了这种 UI 设计，使用 ScrollCard 可以快速的创建一个类似交互的卡片。</view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

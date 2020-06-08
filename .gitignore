@@ -1,0 +1,9 @@
+package-lock.json
+.idea/
+.vscode/
+node_modules/
+dist/
+csslint-reports/
+jshint-reports/
+.DS_Store
+Thumbs.db
