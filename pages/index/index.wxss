@@ -3,22 +3,29 @@
     overflow: hidden;
     position: relative;
     height: 100%;
+    background-color: #5D8FCA;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 /* ScrollCard 卡片那一层，负责控制尺寸、位置 */
 .scrollcard {
-    overflow: hidden;
     position: absolute;
     bottom: 0;
     height: 80%;
 }
 
-/* ScrollCard 卡片圆角那一层，负责控制样式 */
+/* ScrollCard 卡片阴影外层，负责控制位置，以防被 scroll-view 截断阴影等样式 */
+.scrollcard-outter {
+    box-sizing: border-box;
+    margin-top: 80%;
+    padding-top: 40rpx;
+    height: 100%;
+}
+
+/* ScrollCard 卡片阴影圆角那一层，负责控制样式 */
 .scrollcard-inner {
     overflow: hidden;
-    margin-top: 80%;
     padding: 0 60rpx;
     height: 100%;
     color: #333;

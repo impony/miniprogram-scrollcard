@@ -5,13 +5,6 @@ Page({
         scrollCardToView: '',
         scrollCardTop: 0
     },
-    previewImage: function (e) {
-        var _url = e.currentTarget.dataset.imageUrl
-        wx.previewImage({
-            current: _url, // 当前显示图片的http链接
-            urls: [_url] // 需要预览的图片http链接列表
-        })
-    },
     scrollCardGotoUpper: function (e) {
         var _toview = this.data.scrollCardToView ? '' : e.currentTarget.dataset.toview;
         this.setData({
