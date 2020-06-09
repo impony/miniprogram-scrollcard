@@ -12,6 +12,8 @@
 
 手指上下滑动，可以滚动这个卡片；点击卡片顶部可以快速的展开或收起卡片。
 
+![效果预览](preview.gif)
+
 #### 注意
 
 需要给主内容区 scrollcard-main 一个 padding-bottom 值，具体值等于 scrollcard-ctrl 的高度，否则会有部分内容显示不全。
